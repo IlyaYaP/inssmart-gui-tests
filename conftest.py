@@ -30,11 +30,11 @@ def browser(request):
         option_chrome.add_experimental_option(
                                     'prefs',
                                     {'intl.accept_languages': user_language})
-        # service = Service()
+        service = Service()
         # browser = webdriver.Remote(command_executor="http://selenium__standalone-chrome:4444/wd/hub", options=option_chrome)
         browser = webdriver.Chrome(
-            # service=service,
-            service=Service(ChromeDriverManager().install()),
+            service=service,
+            # service=Service(ChromeDriverManager().install()),
             options=option_chrome)
     elif browser_name == 'firefox':
         print('\nstart firefox browser for test..')
