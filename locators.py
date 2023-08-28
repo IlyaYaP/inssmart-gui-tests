@@ -10,5 +10,6 @@ class MortgageInsuranceLocators():
     input_credit_value = (By.CSS_SELECTOR, 'input[name=creditValue]')
     gender_field = (By.CSS_SELECTOR, '.MuiSelect-root.MuiSelect-select')
     gender_field_man = (By.XPATH, '//span[text()="Мужской"]')
+    date_birth_field = (By.CSS_SELECTOR, 'input[placeholder="dd.mm.yyyy"]')
 
 

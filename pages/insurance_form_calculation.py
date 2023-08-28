@@ -23,3 +23,12 @@ class InsuranceFormCalculation(BasePage):
         input_credit_field.send_keys(Keys.CONTROL + 'a')
         input_credit_field.send_keys(Keys.DELETE)
         input_credit_field.send_keys('2100000')
+
+        gender_type_field = self.find_element(MortgageInsuranceLocators.gender_field)
+        gender_type_field.click()
+        gender_type_man = self.find_element(MortgageInsuranceLocators.gender_field_man)
+        gender_type_man.click()
+
+        input_date_birth_field = self.find_element(MortgageInsuranceLocators.date_birth_field)
+        input_date_birth_field.send_keys('29081992')
+        time.sleep(5)
