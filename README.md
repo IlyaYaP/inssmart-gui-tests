@@ -1,7 +1,7 @@
 # Локальный запуск:
 - Клонируем данный репозиторий:
 ```
-git clone https://github.com/IlyaYaP/UI-test-automation.git
+git clone (https://github.com/IlyaYaP/inssmart-gui-tests.git)
 ```
 - В папке с проектом создаем и активируем виртуальное окружение:
 ```
